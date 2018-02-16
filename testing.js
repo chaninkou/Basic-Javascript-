@@ -61,4 +61,9 @@ var array2 = new Array("hello", "world");
 document.write(array2[1]);
 
 document.write("<br>");
+
+function displayHi(name){
+	document.write("Hi " + name);
+}
+
 displayHi("jeff");
