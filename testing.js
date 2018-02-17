@@ -62,6 +62,7 @@ document.write(array2[1]);
 
 document.write("<br>");
 
+// Making a function
 function displayHi(name){
 	document.write("Hi " + name);
 }
