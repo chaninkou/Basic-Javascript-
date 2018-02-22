@@ -32,4 +32,13 @@ document.write("Math.ceil(1.23) = ", Math.ceil(1.23), "<br />");
 document.write("Math.round(1.23) = ", Math.round(1.23), "<br />");
 document.write("Math.log(1.23) = ", Math.log(1.23), "<br />");
 document.write("Math.pow(2,3) = ", Math.pow(2,3), "<br />");
+document.write("Math.sqrt(2,3) = ", Math.sqrt(69), "<br />");
+
+// how to make random number
+document.write("Random number from (1-100) = ", Math.floor((Math.random() * 100) + 1), "<br />");
+
+// how to convert string into a number
+document.write("Convert string into int: (5) = ", parseInt("5"), "<br />");
+
+
 
