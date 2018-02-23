@@ -38,7 +38,20 @@ document.write("Math.sqrt(2,3) = ", Math.sqrt(69), "<br />");
 document.write("Random number from (1-100) = ", Math.floor((Math.random() * 100) + 1), "<br />");
 
 // how to convert string into a number
-document.write("Convert string into int: (5) = ", parseInt("5"), "<br />");
+document.write("Convert string into int: \"5\"= ", parseInt("5"), "<br />");
+
+// how to convert a number to string
+document.write("Convert number into string: (5) = ", Number("5"), "<br />");
+
+// how to get get the length of the strin
+var var4 = "awjdl" + "awddwaddd";
+document.write("string length: ", var4.length, "<br />");
+
+// how to get the index
+document.write("Index of ", var4.indexOf("l"), "<br />");
+
+
+
 
 
 
