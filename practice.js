@@ -49,6 +49,18 @@ document.write("string length: ", var4.length, "<br />");
 
 // how to get the index
 document.write("Index of ", var4.indexOf("l"), "<br />");
+document.write("var4.slice: ", var4.slice(2), "<br />");
+document.write("var4.substr: ", var4.substr(2,2), "<br />");
+// replace
+document.write("var4.replace: ", var4.replace("awjdl", "replaced "), "<br />");
+
+// to upper case
+document.write("var4 upper case: ", var4.toUpperCase(), "<br />");
+
+// to lower case
+document.write("var4 lower case: ", var4.toLowerCase(), "<br />");
+
+
 
 
 
