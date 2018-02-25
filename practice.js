@@ -60,6 +60,16 @@ document.write("var4 upper case: ", var4.toUpperCase(), "<br />");
 // to lower case
 document.write("var4 lower case: ", var4.toLowerCase(), "<br />");
 
+// different way to style it like bold,italics,color
+var styleThis = "something"
+document.write("Bold: ", styleThis.bold(), "<br />");
+document.write("Big: ", styleThis.big(), "<br />");
+document.write("Color: ", styleThis.fontcolor("green"), "<br />");
+document.write("size: ", styleThis.fontsize("10em"), "<br />");
+document.write("Italics: ", styleThis.italics(), "<br />");
+document.write("Link of my website: ", styleThis.link("http://chanincode.tk"), "<br />");
+
+
 
 
 
