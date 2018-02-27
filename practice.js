@@ -67,7 +67,28 @@ document.write("Big: ", styleThis.big(), "<br />");
 document.write("Color: ", styleThis.fontcolor("green"), "<br />");
 document.write("size: ", styleThis.fontsize("10em"), "<br />");
 document.write("Italics: ", styleThis.italics(), "<br />");
+
+// link
 document.write("Link of my website: ", styleThis.link("http://chanincode.tk"), "<br />");
+
+// more style
+document.write("Small: ", styleThis.small(), "<br />");
+document.write("Strike: ", styleThis.strike("green"), "<br />");
+document.write("Sub: ", styleThis.sub("10em"), "<br />");
+document.write("sup: ", styleThis.sup(), "<br />");
+
+// ===, ==, != if and else statement
+var numberOfpeople = 2;
+if((numberOfpeople >= 4) && (numberOfpeople <= 10)){
+	document.write("There are a lot of people" + "<br />");
+}else if (numberOfpeople > 20){
+	document.write("Too many people" + "<br />");
+} else {
+	document.write("Not enough people" + "<br />");
+}
+
+// or and !
+document.write("true or false: ", true || false , "<br />");
 
 
 
