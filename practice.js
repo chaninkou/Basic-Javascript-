@@ -90,7 +90,24 @@ if((numberOfpeople >= 4) && (numberOfpeople <= 10)){
 // or and !
 document.write("true or false: ", true || false , "<br />");
 
+// how to put "" inside "" 
+document.write("\"10\" == 10 = ", ("10" == 10), "<br />");
+document.write("\"10\" === 10 = ", (10 === 10), "<br />");
 
+// using switch statement
+
+var something2 = 2;
+
+switch(something2) {
+	case 1:
+		document.write("YES" + "<br />");
+		break;
+	case 2:
+		document.write("NO" + "<br />");
+		break;
+	default :
+		document.write("MAYBE" + "<br />");
+}
 
 
 
