@@ -109,7 +109,26 @@ switch(something2) {
 		document.write("MAYBE" + "<br />");
 }
 
+// short using ? condition
 
+var something3 = 3;
+var something4 = (something3 >= 3) ? true : false;
+
+document.write(something4 + "<br />");
+
+// using while loop
+var i = 0;
+while(i < 3){
+	document.write(i + "<br />");
+	i++;
+}
+
+// using do and while like java
+do{
+	var type1 = prompt("Type 1 to log in");
+}while(type1 != 1)
+
+alert("you have logged in!");
 
 
 
