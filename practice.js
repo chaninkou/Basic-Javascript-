@@ -127,8 +127,20 @@ while(i < 3){
 do{
 	var type1 = prompt("Type 1 to log in");
 }while(type1 != 1)
-
+	
 alert("you have logged in!");
+
+// for loop
+for(k = 0; k<= 15; k++){
+	if((k % 2) === 0){
+		continue;
+	}
+	if(k === 10){
+		break;
+	}
+	document.write(k + "<br />");
+	
+}
 
 
 
