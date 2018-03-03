@@ -131,16 +131,34 @@ do{
 alert("you have logged in!");
 
 // for loop
-for(k = 0; k<= 15; k++){
+for(k = 0; k<= 30; k++){
 	if((k % 2) === 0){
 		continue;
 	}
-	if(k === 10){
+	if(k === 11){
 		break;
 	}
 	document.write(k + "<br />");
-	
 }
+
+// key value pair
+var student = {name : "Michael", lastname : "happy", money : 40.40};
+
+// for in block
+for(j in student){
+	// reference
+	document.write(student[j] + "<br />");
+}
+
+// array
+var pet = ["dog", "bobby", 150.50];
+
+document.write("first index ",pet[0], "<br />");
+
+pet[3] = "mine";
+
+pet.splice(2,1, "Emily", "CA");
+
 
 
 
