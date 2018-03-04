@@ -159,6 +159,13 @@ pet[3] = "mine";
 
 pet.splice(2,1, "Emily", "CA");
 
+document.write("Pet: ",pet.valueOf(), "<br />");
+
+document.write("Pet: ",pet.join(", "), "<br />");
+
+// delete
+delete pet[3];
+
 
 
 
