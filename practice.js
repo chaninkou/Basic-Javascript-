@@ -166,7 +166,26 @@ document.write("Pet: ",pet.join(", "), "<br />");
 // delete
 delete pet[3];
 
+// testing to see if delete works
+for(j in pet){
+	// reference
+	document.write(pet[j] + "<br />");
+}
 
+var someNumber = [10,7,6,4,2,1];
+
+// sorting numbers
+// starting with the lowest number and use y - x for descending 
+someNumber.sort(function(x,y){return x - y});
+
+// using tostring is much easier than using for loop to print something
+document.write("sorted:", someNumber.toString(), "<br />");
+
+
+// how to combine two array
+var combineArr = someNumber.concat(pet);
+
+document.write("sorted:", combineArr.toString(), "<br />");
 
 
 
