@@ -187,6 +187,25 @@ var combineArr = someNumber.concat(pet);
 
 document.write("sorted:", combineArr.toString(), "<br />");
 
+// remove the last item
+pet.pop();
+
+// add an item to the end
+pet.push("yesss", "world");
+
+// just delete first item
+pet.shift();
+
+// add item before the first item
+pet.unshift("TOOMM");
+
+// another way for for loop
+for(i = 0; i < pet.length; i++){
+	document.write(pet[i] + "<br />");
+}
+
+
+
 
 
 
