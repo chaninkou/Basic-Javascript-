@@ -204,6 +204,19 @@ for(i = 0; i < pet.length; i++){
 	document.write(pet[i] + "<br />");
 }
 
+// using function to check if an array is inside
+function somethingIn(arrayToCheck, value){
+	for(j = 0; j < arrayToCheck.length; j++){
+		if(arrayToCheck[j] === value){
+			return true;
+		}
+	}
+	return false;
+}
+var randomArray = [4,3,2,1];
+document.write("In the array: ", somethingIn(randomArray, 4), "<br/>");
+
+
 
 
 
