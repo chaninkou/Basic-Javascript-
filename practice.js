@@ -216,6 +216,19 @@ function somethingIn(arrayToCheck, value){
 var randomArray = [4,3,2,1];
 document.write("In the array: ", somethingIn(randomArray, 4), "<br/>");
 
+// making a function that will times 3
+function times3(num){
+	var threeTime = 3;
+	return num * threeTime;
+}
+
+// making a function that will take another function
+function multiplying(funct, x){
+	return funct(x);
+}
+
+document.write("threeTimes: " , times3(3), "<br/>");
+document.write("multiplying: " , multiplying(times3, 2), "<br/>");
 
 
 
