@@ -226,9 +226,16 @@ function times3(num){
 function multiplying(funct, x){
 	return funct(x);
 }
-
 document.write("threeTimes: " , times3(3), "<br/>");
 document.write("multiplying: " , multiplying(times3, 2), "<br/>");
+
+// assign a function to a variable
+var addThree = function(x){
+	return x + 3;
+}
+document.write("2 + 3 = " , multiplying(addThree, 2), "<br/>");
+
+
 
 
 
