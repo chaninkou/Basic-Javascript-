@@ -235,7 +235,27 @@ var addThree = function(x){
 }
 document.write("2 + 3 = " , multiplying(addThree, 2), "<br/>");
 
+// get sum function
+function getSum(){
+	var sum = 0;
+	// use arguments.length when you don't know the length
+	for(j = 0; j < arguments.length; j++){
+		sum += arguments[j];
+	}
+	return sum;
+}
+document.write("Sum is " , getSum(2,3,4,5,10,100), "<br/>");
 
+// times two function
+function times2(arrayy){
+	var anotherArray = [];
+	for(k = 0; k <arrayy.length; k++){
+		anotherArray.push(arrayy[k] * 2);
+	}
+	return anotherArray;
+}
+
+document.write("Times two to an array = " , times2([2,3,4]).toString(), "<br/>");
 
 
 
