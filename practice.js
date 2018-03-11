@@ -254,8 +254,24 @@ function times2(arrayy){
 	}
 	return anotherArray;
 }
-
 document.write("Times two to an array = " , times2([2,3,4]).toString(), "<br/>");
+
+// Recursion!!
+function factorial(x){
+	if(x <= 1){
+		return 1
+	} else{
+		return x * factorial(x - 1);
+	}
+}
+// testing recursion of factorial
+document.write("Factorial of 5 is " , factorial(5), "<br/>");
+
+// event handling *important*
+
+function openAlert(mess){
+	alert(mess);
+}
 
 
 
