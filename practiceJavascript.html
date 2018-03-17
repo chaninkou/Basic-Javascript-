@@ -42,17 +42,58 @@
 	
 	<!-- Form that could see what key user put-->
 	<form action "#" id = "exampleForm">
+		<!-- Will show a box for user to type -->
 		<input id = 'keyInput' type = "text">
 		
-		<p id = "dataKey">Data Key</p>
+		<!-- This will keep changing when user type something-->
+		<p id = "dataKey">This will show data user typed</p>
 		
-		<input type = "submit" value = "submit">
+		<input type = "submit" value = "Submit">
 		<input type = "reset" value = "Reset">
 		
 	</form><br />
+	
+	<!-- import picture -->
+	<img src = "pic.jpg" id = "coolPic">
+	
+	<button id = "picButton">Get Picture</button>
+	
+	<input id = 'mouseInput' type = 'text' size = "35"><br />
+	
+	<!-- To track how mouse x and y changes as the mouse move around, it will update it-->
+	Mouse X: <input type = "text" id = "Xmouse"><br />
+	Mouse Y: <input type = "text" id = "Ymouse"><br />
 
+	<!-- Always good to put script code at the end of html-->
 	<script>
+		// Making a event that will trigger when it acts
+		function getChar(event){
+			if(event.which == null){
+				// for Internet explore
+				return String.fromCharCode(event.keyCode);
+			} else if (event.which != 0 && event.charCode != 0){
+				// for every other browsers
+				return String.fromCharCode(event.which);
+			} else {
+				// if the user type something on keyboard that can't be shown
+				return null;
+			}
+		}
 		
+		// assign a event to trigger when user type something
+		document.getElementById('keyInput').onkeypress = 
+		function(event){
+			// window.event is for older version of Internet explore
+			var char = getChar(event || window.event)
+			// this is for when user type on something that is a special key
+			if(!char) return false;
+			
+			// if user type on something that does work
+			document.getElementById('dataKey').innerHTML = char + " was typed";
+			return true;
+		}
+	
+	
 	</script>
 </body>
 </html>
