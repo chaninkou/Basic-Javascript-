@@ -92,6 +92,17 @@
 			document.getElementById('dataKey').innerHTML = char + " was typed";
 			return true;
 		}
+		
+		// how to know if user click in the box and then print out focus on input
+		document.getElementById('keyInput').onfocus = function(event){
+			document.getElementById('dataKey').innerHTML = "Focus on input";
+		}
+		
+		// how to know if user selected the text from the box
+		document.getElementById('keyInput').onselect = function(event){
+			document.getElementById('dataKey').innerHTML = "Selected text";
+		}
+		
 	
 	
 	</script>
