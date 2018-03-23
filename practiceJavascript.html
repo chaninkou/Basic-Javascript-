@@ -4,22 +4,13 @@
 	<meta charset = "utf-8">
 	<title>Basic JavaScript</title>
 	<script src = "practice.js"></script>
-	<!--Will work on some css next time -->
+	<!-- Will work on some css next time -->
+	<!-- Soon -->
 </head>
 <body>
 	
 	<p id = "sayname"></p>
 	
-	<script>
-		var yourAge = prompt("What is your age?");
-		if(yourAge != null){
-		    // Using the id to put a sentence inside using innerHtml
-			document.getElementById("sayname").innerHTML = "Hello, your age is " + yourAge;
-		}else{
-			// Will say this message if the user clicked cancel
-			alert("Please enter your age next time");
-		}
-	</script>
 	<!-- Make a link that will call a javascript code that will pop up a message -->
 	<!-- JavaScript:void(0) is for not reloading the page when you click it -->
 	<a href = "JavaScript:void(0)" onClick = "alert('Hey');">Click Me please</a><br />
@@ -105,9 +96,18 @@
 		}
 		
 
-		
+
+	</script>
 	
-	
+	<script>
+		var yourAge = prompt("What is your age?");
+		if(yourAge != null){
+		    // Using the id to put a sentence inside using innerHtml
+			document.getElementById("sayname").innerHTML = "Hello, your age is " + yourAge;
+		}else{
+			// Will say this message if the user clicked cancel
+			alert("Please enter your age next time");
+		}
 	</script>
 </body>
 </html>
