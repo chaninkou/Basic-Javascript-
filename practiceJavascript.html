@@ -5,7 +5,18 @@
 	<title>Basic JavaScript</title>
 	<script src = "practice.js"></script>
 	<!-- Will work on some css next time -->
-	<!-- Soon -->
+	<style type = "text/css">
+		body {font-size: 2.0em;}
+		.hidden {display:none;}
+		.show {display:inline !important;}
+		button {
+			border: 3px solid black; background: blue;
+			front-size: .6em; front-weight: bold; color: red;
+			padding: .9em 3em;
+			margin-top:.4em;
+		}
+		
+	</style>
 </head>
 <body>
 	
@@ -95,7 +106,24 @@
 			document.getElementById('dataKey').innerHTML = "Selected text";
 		}
 		
-
+		// click on logo button with hidden or display
+		document.getElementById('picButton').onclick = function(event){
+			document.getElementById('coolPic').className = "show";
+		}
+		
+		// Turning the picture into the other way if it was on the image
+		document.getElementById('coolPic').onmouseover = function(event){
+			document.getElementById('coolPic').src = "pic-hoz.jpg";
+			document.getElementById('mouseInput').value = "Mouse over the image";
+		}
+		
+		// Turning the picture back into the other way if it was on the image
+		document.getElementById('coolPic').onmouseout = function(event){
+			document.getElementById('coolPic').src = "pic.jpg";
+			document.getElementById('mouseInput').value = "Mouse not on image anymore";
+		}
+		
+		// work on mins 58
 
 	</script>
 	
