@@ -96,24 +96,24 @@
 			return true;
 		}
 		
-		// how to know if user click in the box and then print out focus on input
+		// How to know if user click in the box and then print out focus on input
 		document.getElementById('keyInput').onfocus = function(event){
 			document.getElementById('dataKey').innerHTML = "Focus on input";
 		}
 		
-		// how to know if user selected the text from the box
+		// How to know if user selected the text from the box
 		document.getElementById('keyInput').onselect = function(event){
 			document.getElementById('dataKey').innerHTML = "Selected text";
 		}
 		
-		// click on logo button with hidden or display
+		// Click on logo button with hidden or display
 		document.getElementById('picButton').onclick = function(event){
 			document.getElementById('coolPic').className = "show";
 		}
 		
 		// Turning the picture into the other way if it was on the image
 		document.getElementById('coolPic').onmouseover = function(event){
-			// need to figure out why the image is not changing
+			// Need to figure out why the image is not changing
 			document.getElementById('coolPic').src = "pic-hoz.jpg";
 			document.getElementById('mouseInput').value = "Mouse over the image";
 		}
