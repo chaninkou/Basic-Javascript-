@@ -113,15 +113,14 @@
 		
 		// Turning the picture into the other way if it was on the image
 		document.getElementById('coolPic').onmouseover = function(event){
-			// Need to figure out why the image is not changing
 			document.getElementById('coolPic').src = "pic2.jpg";
-			document.getElementById('mouseInput').value = "Mouse over the image";
+			document.getElementById('mouseInput').value = "Mouse is over the image";
 		}
 		
 		// Turning the picture back into the other way if it was on the image
 		document.getElementById('coolPic').onmouseout = function(event){
 			document.getElementById('coolPic').src = "pic.jpg";
-			document.getElementById('mouseInput').value = "Mouse not on image anymore";
+			document.getElementById('mouseInput').value = "Mouse is not on image anymore";
 		}
 		
 		// work on mins 58
