@@ -123,7 +123,19 @@
 			document.getElementById('mouseInput').value = "Mouse is not on image anymore";
 		}
 		
-		// work on mins 58
+		document.body.onmousemove = function(ee){
+		ee = ee || window.event;
+		
+		var pageX = ee.pageX;
+		var pageY = ee.pageY;
+		
+		if(pageX === undefined){
+			pageX = ee.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+			pageY = ee.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+			}
+		document.getElementById('Xmouse').value = pageX;
+		document.getElementById('Ymouse').value = pageY;	
+		}	
 
 	</script>
 	
