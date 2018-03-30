@@ -66,6 +66,9 @@
 	<!-- To track how mouse x and y changes as the mouse move around, it will update it-->
 	Mouse X: <input type = "text" id = "Xmouse"><br />
 	Mouse Y: <input type = "text" id = "Ymouse"><br />
+	
+	<!--Creating a button that clear input -->
+	<button id = "clearInput">Clear input</button>
 
 	<!-- Always good to put script code at the end of html-->
 	<script>
@@ -133,9 +136,20 @@
 			pageX = ee.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
 			pageY = ee.clientY + document.body.scrollTop + document.documentElement.scrollTop;
 			}
+		// getting the x and y axis for where the mouse is going
 		document.getElementById('Xmouse').value = pageX;
 		document.getElementById('Ymouse').value = pageY;	
-		}	
+		}
+		
+		document.getElementById('clearInput').onclick = function(event){
+			var inputElement = document.getElementsByTagName('input');
+		
+			for(var j = 0; j < inputElement.length; j++){
+				if(inputElement[j].type == "text"){
+					inputElement[j].value = "";
+				}
+			}
+		}
 
 	</script>
 	
