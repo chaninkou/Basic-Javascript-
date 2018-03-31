@@ -141,6 +141,7 @@
 		document.getElementById('Ymouse').value = pageY;	
 		}
 		
+		// this will clear all the input that was typed or there
 		document.getElementById('clearInput').onclick = function(event){
 			var inputElement = document.getElementsByTagName('input');
 		
@@ -149,18 +150,6 @@
 					inputElement[j].value = "";
 				}
 			}
-		}
-
-	</script>
-	
-	<script>
-		var yourAge = prompt("What is your age?");
-		if(yourAge != null){
-		    // Using the id to put a sentence inside using innerHtml
-			document.getElementById("sayname").innerHTML = "Hello, your age is " + yourAge;
-		}else{
-			// Will say this message if the user clicked cancel
-			alert("Please enter your age next time");
 		}
 	</script>
 </body>

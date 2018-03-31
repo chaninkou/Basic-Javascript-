@@ -273,6 +273,16 @@ function openAlert(mess){
 	alert(mess);
 }
 
+// pop out a prompt that ask user
+var yourAge = prompt("What is your age?");
+if(yourAge != null){
+	// Using the id to put a sentence inside using innerHtml
+	document.getElementById("sayname").innerHTML = "Hello, your age is " + yourAge;
+}else{
+	// Will say this message if the user clicked cancel
+	alert("Please enter your age next time");
+}
+
 
 
 
