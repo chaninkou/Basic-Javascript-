@@ -126,6 +126,7 @@
 			document.getElementById('mouseInput').value = "Mouse is not on image anymore";
 		}
 		
+		// Making a function that would track the x and y axis whatever you move the mouse
 		document.body.onmousemove = function(ee){
 		ee = ee || window.event;
 		
@@ -141,7 +142,7 @@
 		document.getElementById('Ymouse').value = pageY;	
 		}
 		
-		// this will clear all the input that was typed or there
+		// This will clear all the input that was typed or there
 		document.getElementById('clearInput').onclick = function(event){
 			var inputElement = document.getElementsByTagName('input');
 		
