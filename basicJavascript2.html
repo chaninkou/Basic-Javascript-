@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Basic JavaScript 2</title>
+	<!-- Some css -->
+	<style type = "text/css">
+		body {font-size: 2.0em;}
+		.hidden {display:none;}
+		.show {display:inline !important;}
+		button {
+			border: 3px solid black; background: gray;
+			front-size: .6em; front-weight: bold; color: blue;
+			padding: .9em 3em;
+			margin-top:.4em;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- This is just a random paragraph -->
+	<div id = "someDiv">
+		Hello there, if you are reading this, please email michaelkoulove@yahoo.com to say hi! I'm Michael by the way.
+	</div>
+	<button id = "bgColor">Change Background color</button>
+	<button id = "imageColor">Change image color</button>
+	<button id = "borderStyle">Change border style</button>
+	<button id = "widthColor">Change border width</button>
+	<button id = "borderColor">Border color</button>
+	
+	<script>
+	// Press this button to change the background to blue
+	document.getElementById('bgColor').onclick = function(event){
+		document.getElementById('someDiv').style.backgroundColor = "blue";
+	}
+	
+	
+	</script>
+</body>
+</html>
