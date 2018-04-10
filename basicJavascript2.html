@@ -20,13 +20,13 @@
 <body>
 	<!-- This is just a random paragraph -->
 	<div id = "someDiv">
-		Hello there, if you are reading this, please email michaelkoulove@yahoo.com to say hi! I'm Michael by the way.
+		Hello there, if you are reading this, please email michaelkoulove@yahoo.com to say hi! I'm Michael by the way. Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something
 	</div>
 	<button id = "bgColor">Change Background color</button>
-	<button id = "imageColor">Change image color</button>
+	<button id = "bgImage">Change image color</button>
 	<button id = "borderStyle">Change border style</button>
-	<button id = "widthColor">Change border width</button>
-	<button id = "borderColor">Border color</button>
+	<button id = "widthStyle">Change border width</button>
+	<button id = "bdColor">Border color</button>
 	
 	<script>
 	// Press this button to change the background to blue
@@ -35,8 +35,23 @@
 	}
 	
 	// Press this button to change the background image
-	document.getElementById('imageColor').onclick = function(event){
+	document.getElementById('bgImage').onclick = function(event){
 		document.getElementById('someDiv').style.backgroundImage = "url('pic.jpg')";
+	}
+	
+	// Press this button to change the border style to solid line
+	document.getElementById('borderStyle').onclick = function(event){
+		document.getElementById('someDiv').style.borderStyle = "solid";
+	}
+	
+	// Press this button to change the width style to thick 
+	document.getElementById('widthStyle').onclick = function(event){
+		document.getElementById('someDiv').style.borderWidth = "thick";
+	}
+	
+    // Press this button to change the border color
+	document.getElementById('bdColor').onclick = function(event){
+		document.getElementById('someDiv').style.borderColor = "red";
 	}
 	
 	
