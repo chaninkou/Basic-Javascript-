@@ -19,13 +19,36 @@
 <body>
 	<!-- This is just a random paragraph -->
 	<div id = "someDiv">
-		Hello there, if you are reading this, please email michaelkoulove@yahoo.com to say hi! I'm Michael by the way. Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something
+		<p>Hello there, if you are reading this, please email <em>michaelkoulove@yahoo.com</em> to say hi! I'm Michael by <b>the way.</b> Something something something something Something something something something Something something something something <em>Something  123 </em>something something something Something something something something <b>Something something something something Something something something something</b></p>
 	</div>
+	
+	<!-- Button for function like background color and other -->
 	<button id = "bgColor">Change Background color</button>
 	<button id = "bgImage">Change image color</button>
 	<button id = "borderStyle">Change border style</button>
 	<button id = "widthStyle">Change border width</button>
-	<button id = "bdColor">Border color</button>
+	<button id = "bdColor">Border color</button><br/>
+	
+	<!-- This is how to set the size Image  -->
+	<br/><img src = "pic.jpg" id = "coolPic2" alt = "My selfie" height = "200" width = "200"><br/>
+	
+	<!-- More button for pages -->
+	<button id = "ToYahoo">To Yahoo</button><br/>
+	<button id = "leftPage">Left page</button><br/>
+	<button id = "rightPage">Right page</button><br/>
+	<button id = "reload">Reload this page</button><br/>
+	
+	<script>
+	// How to see the URL
+	document.write("Current URL: ", window.location.href, "<br />");
+	
+	// How to see the host
+	document.write("Current host: ", window.location.hostname, "<br />");
+	
+	// How to see the Path
+	document.write("Current path: ", window.location.pathname, "<br />");
+	
+	</script>
 	
 	<script>
 	// Press this button to change the background to blue
@@ -52,8 +75,6 @@
 	document.getElementById('bdColor').onclick = function(event){
 		document.getElementById('someDiv').style.borderColor = "red";
 	}
-	
-	
 	</script>
 </body>
 </html>
