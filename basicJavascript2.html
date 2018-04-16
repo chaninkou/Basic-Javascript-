@@ -36,19 +36,7 @@
 	<button id = "ToYahoo">To Yahoo</button><br/>
 	<button id = "leftPage">Left page</button><br/>
 	<button id = "rightPage">Right page</button><br/>
-	<button id = "reload">Reload this page</button><br/>
-	
-	<script>
-	// How to see the URL
-	document.write("Current URL: ", window.location.href, "<br />");
-	
-	// How to see the host
-	document.write("Current host: ", window.location.hostname, "<br />");
-	
-	// How to see the Path
-	document.write("Current path: ", window.location.pathname, "<br />");
-	
-	</script>
+	<button id = "reloadPage">Reload this page</button><br/>
 	
 	<script>
 	// Press this button to change the background to blue
@@ -75,6 +63,42 @@
 	document.getElementById('bdColor').onclick = function(event){
 		document.getElementById('someDiv').style.borderColor = "red";
 	}
+	</script>
+	
+		<script>
+	// How to see the URL
+	document.write("Current URL: ", window.location.href, "<br />");
+	
+	// How to see the host
+	document.write("Current host: ", window.location.hostname, "<br />");
+	
+	// How to see the Path
+	document.write("Current path: ", window.location.pathname, "<br />");
+	
+	// When user click this, it will go to yahoo.com
+	document.getElementById('ToYahoo').onclick = function(event)
+	{
+		window.location.href = "http://yahoo.com"
+	}
+	
+	// Forward a page
+	document.getElementById('leftPage').onclick = function(event)
+	{
+		history.forward();
+	}
+	
+	// Back to a page
+	document.getElementById('rightPage').onclick = function(event)
+	{
+		history.back();
+	}
+	
+	// Reload a page
+	document.getElementById('reloadPage').onclick = function(event)
+	{
+		window.location.reload(true);
+	}
+	
 	</script>
 </body>
 </html>
